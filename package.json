@@ -19,7 +19,9 @@
     "lint:ws": "pnpm dlx sherif@latest",
     "postinstall": "pnpm lint:ws",
     "typecheck": "turbo typecheck",
-    "ui-add": "pnpm -F ui ui-add"
+    "ui-add": "pnpm -F ui ui-add",
+    "build:web": "dotenv -- turbo build --filter=@acme/nextjs",
+    "start:web": "dotenv -- turbo start --filter=@acme/nextjs"
   },
   "devDependencies": {
     "@acme/prettier-config": "workspace:*",
